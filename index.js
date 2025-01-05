@@ -18,8 +18,8 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/github", async (req, res) => {
-	const req = await fetch(URL);
-	const response = await res.json();
+	const request = await fetch(URL);
+	const response = await request.json();
 	res.json(response);
 });
 
